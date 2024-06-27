@@ -1,19 +1,59 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
 }
 
 #container {
-  text-align: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#potato {
-  width: 200px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s;
+#aloo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s, width 0.2s, opacity 0.5s;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+#aloo.fade-in {
+    opacity: 1;
+}
+
+#aloo.rotate {
+    animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#nayaAloo {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+#nayaAloo:hover {
+    background-color: #45a049;
 }

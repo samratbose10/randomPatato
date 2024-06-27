@@ -7,4 +7,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const potatoImg = document.getElementById("aloo");
   potatoImg.src = potatoImages[Math.floor(Math.random() * potatoImages.length)];
-&& 
